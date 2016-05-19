@@ -68,6 +68,20 @@
             {% endif %}
           </ul>
         {% endif %}
+        {% if config.extra.links %}
+          <hr>
+          <ul>
+          {% for name in config.extra.links %}
+              {% set url = config.extra.links[name] %}
+              <li>
+                <a href="{{ url }}" target="_blank" title="{{ name }}">
+                    {{ name }}
+                </a>
+              </li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+        <small>This work would not have been possible without the help of the MadWeight team and funding of</small>
       </div>
     </div>
   </div>
