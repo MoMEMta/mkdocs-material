@@ -147,6 +147,13 @@
         margin: 12px 0;
       }
     }
+
+    .logos {
+      padding: 14.5px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }
 
